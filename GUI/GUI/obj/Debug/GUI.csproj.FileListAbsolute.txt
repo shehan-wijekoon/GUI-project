@@ -1,0 +1,10 @@
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\bin\Debug\GUI.exe.config
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\bin\Debug\GUI.exe
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\bin\Debug\GUI.pdb
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.Form1.resources
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.exe
+C:\Users\Supun\Desktop\55454\GUI-project\GUI\GUI\obj\Debug\GUI.pdb

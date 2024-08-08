@@ -56,8 +56,10 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "details";
             Text = "details";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }

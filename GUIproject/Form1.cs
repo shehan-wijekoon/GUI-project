@@ -17,7 +17,7 @@ namespace GUIproject
 
         private void Btnemp_Click(object sender, EventArgs e)
         {
-            employee emp = new employee() { TopLevel = false,TopMost = true };
+            employee emp = new employee() { TopLevel = false, TopMost = true };
             Panelview.Controls.Add(emp);
             emp.BringToFront();
             emp.Show();
@@ -26,6 +26,14 @@ namespace GUIproject
         private void Panelview_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            details det = new details() { TopLevel = false, TopMost = true };
+            Panelview.Controls.Add(det);
+            det.BringToFront();
+            det.Show();
         }
     }
 }

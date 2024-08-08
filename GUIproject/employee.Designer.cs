@@ -45,108 +45,115 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(306, 9);
+            label1.Location = new Point(268, 7);
             label1.Name = "label1";
-            label1.Size = new Size(125, 20);
+            label1.Size = new Size(97, 15);
             label1.TabIndex = 0;
             label1.Text = "Employee Details";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 65);
+            label2.Location = new Point(10, 49);
             label2.Name = "label2";
-            label2.Size = new Size(76, 20);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 1;
             label2.Text = "Full Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 117);
+            label3.Location = new Point(10, 88);
             label3.Name = "label3";
-            label3.Size = new Size(24, 20);
+            label3.Size = new Size(18, 15);
             label3.TabIndex = 2;
             label3.Text = "ID";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 173);
+            label4.Location = new Point(10, 130);
             label4.Name = "label4";
-            label4.Size = new Size(62, 20);
+            label4.Size = new Size(49, 15);
             label4.TabIndex = 3;
             label4.Text = "Address";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 230);
+            label5.Location = new Point(10, 172);
             label5.Name = "label5";
-            label5.Size = new Size(115, 20);
+            label5.Size = new Size(94, 15);
             label5.TabIndex = 4;
             label5.Text = "Contact number";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 286);
+            label6.Location = new Point(10, 214);
             label6.Name = "label6";
-            label6.Size = new Size(89, 20);
+            label6.Size = new Size(70, 15);
             label6.TabIndex = 5;
             label6.Text = "Department";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(94, 62);
+            textBox1.Location = new Point(82, 46);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(304, 27);
+            textBox1.Size = new Size(266, 23);
             textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(94, 114);
+            textBox2.Location = new Point(82, 86);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(266, 27);
+            textBox2.Size = new Size(233, 23);
             textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(94, 170);
+            textBox3.Location = new Point(82, 128);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(304, 27);
+            textBox3.Size = new Size(266, 23);
             textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(133, 223);
+            textBox4.Location = new Point(116, 167);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(265, 27);
+            textBox4.Size = new Size(232, 23);
             textBox4.TabIndex = 9;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Software Development", "Management", "IT support and Consulton", "QA Team", "UI/UX" });
-            comboBox1.Location = new Point(107, 283);
+            comboBox1.Location = new Point(94, 212);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(133, 23);
             comboBox1.TabIndex = 10;
             // 
             // button1
             // 
-            button1.Location = new Point(355, 367);
+            button1.Location = new Point(311, 275);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(193, 44);
+            button1.Size = new Size(169, 33);
             button1.TabIndex = 11;
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // employee
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(646, 446);
+            ClientSize = new Size(565, 334);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(textBox4);
@@ -160,6 +167,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "employee";
             Text = "employee";
             WindowState = FormWindowState.Maximized;

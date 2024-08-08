@@ -10,7 +10,6 @@ namespace GUIproject
         private void Btncalculate_Click(object sender, EventArgs e)
         {
             calculate cal = new calculate() { TopLevel = false, TopMost = true };
-            cal.FormBorderStyle = FormBorderStyle.None;
             Panelview.Controls.Add(cal);
             cal.BringToFront();
             cal.Show();
@@ -18,9 +17,7 @@ namespace GUIproject
 
         private void Btnemp_Click(object sender, EventArgs e)
         {
-            employee emp = new employee();
-            { TopLevel = false; TopMost = true; };
-            emp.FormBorderStyle = FormBorderStyle.None;
+            employee emp = new employee() { TopLevel = false,TopMost = true };
             Panelview.Controls.Add(emp);
             emp.BringToFront();
             emp.Show();

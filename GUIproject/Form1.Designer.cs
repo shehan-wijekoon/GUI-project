@@ -34,6 +34,8 @@
             Btncalculate = new Button();
             label3 = new Label();
             Btnemp = new Button();
+            button1 = new Button();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -77,11 +79,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(27, 232);
+            label3.Location = new Point(35, 232);
             label3.Name = "label3";
-            label3.Size = new Size(125, 20);
+            label3.Size = new Size(109, 20);
             label3.TabIndex = 0;
-            label3.Text = "Employee Details";
+            label3.Text = "New Employee";
             // 
             // Btnemp
             // 
@@ -93,11 +95,31 @@
             Btnemp.UseVisualStyleBackColor = true;
             Btnemp.Click += Btnemp_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 402);
+            button1.Name = "button1";
+            button1.Size = new Size(168, 56);
+            button1.TabIndex = 4;
+            button1.Text = "VIEW";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(35, 368);
+            label4.Name = "label4";
+            label4.Size = new Size(123, 20);
+            label4.TabIndex = 3;
+            label4.Text = "Employee details";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(882, 553);
+            Controls.Add(button1);
+            Controls.Add(label4);
             Controls.Add(Btnemp);
             Controls.Add(label3);
             Controls.Add(Btncalculate);
@@ -118,5 +140,7 @@
         private Button Btncalculate;
         private Label label3;
         private Button Btnemp;
+        private Button button1;
+        private Label label4;
     }
 }

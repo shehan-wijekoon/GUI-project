@@ -38,14 +38,14 @@
             button1 = new Button();
             label8 = new Label();
             label9 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
+            Txtname = new TextBox();
+            Txtid = new TextBox();
+            Txthours = new TextBox();
+            Txtbonus = new TextBox();
+            TxtOt = new TextBox();
+            Txtfinal = new TextBox();
             label10 = new Label();
-            comboBox1 = new ComboBox();
+            Cmbdepartment = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -119,6 +119,7 @@
             button1.TabIndex = 7;
             button1.Text = "Calculate";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label8
             // 
@@ -138,47 +139,48 @@
             label9.TabIndex = 9;
             label9.Text = "Final Salary";
             // 
-            // textBox1
+            // Txtname
             // 
-            textBox1.Location = new Point(67, 58);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 10;
+            Txtname.Location = new Point(67, 58);
+            Txtname.Name = "Txtname";
+            Txtname.Size = new Size(125, 27);
+            Txtname.TabIndex = 10;
+            Txtname.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // Txtid
             // 
-            textBox2.Location = new Point(397, 58);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 11;
+            Txtid.Location = new Point(397, 58);
+            Txtid.Name = "Txtid";
+            Txtid.Size = new Size(125, 27);
+            Txtid.TabIndex = 11;
             // 
-            // textBox4
+            // Txthours
             // 
-            textBox4.Location = new Point(480, 108);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 13;
+            Txthours.Location = new Point(480, 108);
+            Txthours.Name = "Txthours";
+            Txthours.Size = new Size(125, 27);
+            Txthours.TabIndex = 13;
             // 
-            // textBox5
+            // Txtbonus
             // 
-            textBox5.Location = new Point(442, 163);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 14;
+            Txtbonus.Location = new Point(442, 163);
+            Txtbonus.Name = "Txtbonus";
+            Txtbonus.Size = new Size(125, 27);
+            Txtbonus.TabIndex = 14;
             // 
-            // textBox6
+            // TxtOt
             // 
-            textBox6.Location = new Point(88, 166);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
-            textBox6.TabIndex = 15;
+            TxtOt.Location = new Point(88, 166);
+            TxtOt.Name = "TxtOt";
+            TxtOt.Size = new Size(125, 27);
+            TxtOt.TabIndex = 15;
             // 
-            // textBox7
+            // Txtfinal
             // 
-            textBox7.Location = new Point(299, 318);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(306, 27);
-            textBox7.TabIndex = 16;
+            Txtfinal.Location = new Point(299, 318);
+            Txtfinal.Name = "Txtfinal";
+            Txtfinal.Size = new Size(306, 27);
+            Txtfinal.TabIndex = 16;
             // 
             // label10
             // 
@@ -189,29 +191,29 @@
             label10.TabIndex = 17;
             label10.Text = "Rs";
             // 
-            // comboBox1
+            // Cmbdepartment
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Software Development", "Management", "IT support and Consulton", "QA Team", "UI/UX" });
-            comboBox1.Location = new Point(107, 108);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 18;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            Cmbdepartment.FormattingEnabled = true;
+            Cmbdepartment.Items.AddRange(new object[] { "Software Development", "Management", "IT support and Consulton", "QA Team", "UI/UX" });
+            Cmbdepartment.Location = new Point(107, 108);
+            Cmbdepartment.Name = "Cmbdepartment";
+            Cmbdepartment.Size = new Size(151, 28);
+            Cmbdepartment.TabIndex = 18;
+            Cmbdepartment.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // calculate
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(692, 453);
-            Controls.Add(comboBox1);
+            Controls.Add(Cmbdepartment);
             Controls.Add(label10);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(Txtfinal);
+            Controls.Add(TxtOt);
+            Controls.Add(Txtbonus);
+            Controls.Add(Txthours);
+            Controls.Add(Txtid);
+            Controls.Add(Txtname);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(button1);
@@ -240,13 +242,13 @@
         private Button button1;
         private Label label8;
         private Label label9;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox Txtname;
+        private TextBox Txtid;
+        private TextBox Txthours;
+        private TextBox Txtbonus;
+        private TextBox TxtOt;
+        private TextBox Txtfinal;
         private Label label10;
-        private ComboBox comboBox1;
+        private ComboBox Cmbdepartment;
     }
 }

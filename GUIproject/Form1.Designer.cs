@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            panel1 = new Panel();
+            Panelview = new Panel();
             label2 = new Label();
             Btncalculate = new Button();
             SuspendLayout();
@@ -44,13 +44,13 @@
             label1.TabIndex = 0;
             label1.Text = "Employee Management System";
             // 
-            // panel1
+            // Panelview
             // 
-            panel1.BackColor = SystemColors.ActiveBorder;
-            panel1.Location = new Point(186, 79);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(684, 462);
-            panel1.TabIndex = 1;
+            Panelview.BackColor = SystemColors.ActiveBorder;
+            Panelview.Location = new Point(186, 79);
+            Panelview.Name = "Panelview";
+            Panelview.Size = new Size(684, 462);
+            Panelview.TabIndex = 1;
             // 
             // label2
             // 
@@ -69,6 +69,7 @@
             Btncalculate.TabIndex = 0;
             Btncalculate.Text = "CALCULATE";
             Btncalculate.UseVisualStyleBackColor = true;
+            Btncalculate.Click += Btncalculate_Click;
             // 
             // Form1
             // 
@@ -77,7 +78,7 @@
             ClientSize = new Size(882, 553);
             Controls.Add(Btncalculate);
             Controls.Add(label2);
-            Controls.Add(panel1);
+            Controls.Add(Panelview);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Home";
@@ -88,7 +89,7 @@
         #endregion
 
         private Label label1;
-        private Panel panel1;
+        private Panel Panelview;
         private Label label2;
         private Button Btncalculate;
     }

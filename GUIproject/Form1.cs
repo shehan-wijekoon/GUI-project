@@ -6,5 +6,13 @@ namespace GUIproject
         {
             InitializeComponent();
         }
+
+        private void Btncalculate_Click(object sender, EventArgs e)
+        {
+            calculate cal = new calculate() { TopLevel = false, TopMost = true };
+            cal.FormBorderStyle = FormBorderStyle.None;
+            Panelview.Controls.Add(cal);
+            cal.Show();
+        }
     }
 }

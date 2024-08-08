@@ -30,29 +30,39 @@ namespace GUIproject
 
             double finalsal = 0;
 
-            if(Cmbdepartment.SelectedIndex == 0)
+            if (Cmbdepartment.SelectedIndex == 0)
             {
-                finalsal = hours*2000 + ot*1000 + bonus;    
+                finalsal = hours * 2000 + ot * 1000 + bonus;
             }
-            else if(Cmbdepartment.SelectedIndex == 1)
+            else if (Cmbdepartment.SelectedIndex == 1)
             {
                 finalsal = hours * 1000 + ot * 1000 + bonus;
             }
-            else if(Cmbdepartment.SelectedIndex == 2)
+            else if (Cmbdepartment.SelectedIndex == 2)
             {
-               finalsal = hours * 1000 + ot * 500 + bonus;
+                finalsal = hours * 1000 + ot * 500 + bonus;
             }
             else
             {
-               finalsal = hours * 2000 + ot * 1000 + bonus;
+                finalsal = hours * 2000 + ot * 1000 + bonus;
             }
 
 
             Txtfinal.Text = finalsal.ToString();
-                
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

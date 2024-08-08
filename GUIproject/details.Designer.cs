@@ -39,9 +39,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(284, 7);
+            label1.Font = new Font("StratfordRandom", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(248, 5);
             label1.Name = "label1";
-            label1.Size = new Size(97, 15);
+            label1.Size = new Size(173, 24);
             label1.TabIndex = 0;
             label1.Text = "Employee Details";
             // 
@@ -50,15 +51,17 @@
             panel1.BackColor = SystemColors.ControlLight;
             panel1.Controls.Add(button1);
             panel1.Controls.Add(dataGridView1);
-            panel1.Location = new Point(10, 25);
+            panel1.Location = new Point(10, 33);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(679, 304);
+            panel1.Size = new Size(679, 330);
             panel1.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(274, 269);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(274, 289);
             button1.Name = "button1";
             button1.Size = new Size(123, 32);
             button1.TabIndex = 1;
@@ -69,9 +72,9 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 3);
+            dataGridView1.Location = new Point(16, 9);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(673, 260);
+            dataGridView1.Size = new Size(647, 274);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -79,7 +82,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            BackgroundImage = Properties.Resources.closeup_hands_holding_cash;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(719, 374);
             Controls.Add(panel1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;

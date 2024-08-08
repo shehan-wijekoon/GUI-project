@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employee));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -45,76 +46,101 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(268, 7);
+            label1.BackColor = SystemColors.HotTrack;
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Font = new Font("AccoladeSerial-Xbold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(205, 6);
             label1.Name = "label1";
-            label1.Size = new Size(97, 15);
+            label1.Size = new Size(210, 31);
             label1.TabIndex = 0;
             label1.Text = "Employee Details";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = SystemColors.ActiveCaption;
+            label2.BorderStyle = BorderStyle.Fixed3D;
+            label2.FlatStyle = FlatStyle.Flat;
+            label2.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(10, 49);
             label2.Name = "label2";
-            label2.Size = new Size(61, 15);
+            label2.Size = new Size(77, 19);
             label2.TabIndex = 1;
             label2.Text = "Full Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = SystemColors.ActiveCaption;
+            label3.BorderStyle = BorderStyle.Fixed3D;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(10, 88);
             label3.Name = "label3";
-            label3.Size = new Size(18, 15);
+            label3.Size = new Size(27, 19);
             label3.TabIndex = 2;
             label3.Text = "ID";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = SystemColors.ActiveCaption;
+            label4.BorderStyle = BorderStyle.Fixed3D;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(10, 130);
             label4.Name = "label4";
-            label4.Size = new Size(49, 15);
+            label4.Size = new Size(65, 19);
             label4.TabIndex = 3;
             label4.Text = "Address";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = SystemColors.ActiveCaption;
+            label5.BorderStyle = BorderStyle.Fixed3D;
+            label5.FlatStyle = FlatStyle.Flat;
+            label5.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(10, 172);
             label5.Name = "label5";
-            label5.Size = new Size(94, 15);
+            label5.Size = new Size(115, 19);
             label5.TabIndex = 4;
             label5.Text = "Contact number";
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = SystemColors.ActiveCaption;
+            label6.BorderStyle = BorderStyle.Fixed3D;
+            label6.FlatStyle = FlatStyle.Flat;
+            label6.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(10, 214);
             label6.Name = "label6";
-            label6.Size = new Size(70, 15);
+            label6.Size = new Size(88, 19);
             label6.TabIndex = 5;
             label6.Text = "Department";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(82, 46);
+            textBox1.Location = new Point(129, 43);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(266, 23);
             textBox1.TabIndex = 6;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(82, 86);
+            textBox2.Location = new Point(129, 87);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(233, 23);
+            textBox2.Size = new Size(266, 23);
             textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(82, 128);
+            textBox3.Location = new Point(129, 129);
             textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(266, 23);
@@ -122,38 +148,47 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(116, 167);
+            textBox4.Location = new Point(129, 166);
             textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(232, 23);
+            textBox4.Size = new Size(266, 23);
             textBox4.TabIndex = 9;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Software Development", "Management", "IT support and Consulton", "QA Team", "UI/UX" });
-            comboBox1.Location = new Point(94, 212);
+            comboBox1.Location = new Point(129, 206);
             comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
+            comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 10;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(311, 275);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.BackColor = SystemColors.GradientInactiveCaption;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(246, 276);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(169, 33);
             button1.TabIndex = 11;
             button1.Text = "ADD";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // employee
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(565, 334);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(666, 370);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(textBox4);

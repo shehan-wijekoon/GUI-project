@@ -32,6 +32,8 @@
             Panelview = new Panel();
             label2 = new Label();
             Btncalculate = new Button();
+            label3 = new Label();
+            Btnemp = new Button();
             SuspendLayout();
             // 
             // label1
@@ -51,6 +53,7 @@
             Panelview.Name = "Panelview";
             Panelview.Size = new Size(684, 462);
             Panelview.TabIndex = 1;
+            Panelview.Paint += Panelview_Paint;
             // 
             // label2
             // 
@@ -71,11 +74,32 @@
             Btncalculate.UseVisualStyleBackColor = true;
             Btncalculate.Click += Btncalculate_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(27, 232);
+            label3.Name = "label3";
+            label3.Size = new Size(125, 20);
+            label3.TabIndex = 0;
+            label3.Text = "Employee Details";
+            // 
+            // Btnemp
+            // 
+            Btnemp.Location = new Point(12, 266);
+            Btnemp.Name = "Btnemp";
+            Btnemp.Size = new Size(168, 56);
+            Btnemp.TabIndex = 2;
+            Btnemp.Text = "ADD";
+            Btnemp.UseVisualStyleBackColor = true;
+            Btnemp.Click += Btnemp_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(882, 553);
+            Controls.Add(Btnemp);
+            Controls.Add(label3);
             Controls.Add(Btncalculate);
             Controls.Add(label2);
             Controls.Add(Panelview);
@@ -92,5 +116,7 @@
         private Panel Panelview;
         private Label label2;
         private Button Btncalculate;
+        private Label label3;
+        private Button Btnemp;
     }
 }

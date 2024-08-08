@@ -1,3 +1,7 @@
+using MySql.Data.MySqlClient;
+using System.Data;
+using System.Windows.Forms;
+
 namespace GUIproject
 {
     public partial class Form1 : Form
@@ -34,6 +38,12 @@ namespace GUIproject
             Panelview.Controls.Add(det);
             det.BringToFront();
             det.Show();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -24,31 +24,42 @@ namespace GUIproject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int hours = Convert.ToInt32(Txthours.Text);
-            int ot = Convert.ToInt32(TxtOt.Text);
-            double bonus = Convert.ToDouble(Txtbonus.Text);
-
-            double finalsal = 0;
-
-            if (Cmbdepartment.SelectedIndex == 0)
+            try
             {
-                finalsal = hours * 2000 + ot * 1000 + bonus;
-            }
-            else if (Cmbdepartment.SelectedIndex == 1)
-            {
-                finalsal = hours * 1000 + ot * 1000 + bonus;
-            }
-            else if (Cmbdepartment.SelectedIndex == 2)
-            {
-                finalsal = hours * 1000 + ot * 500 + bonus;
-            }
-            else
-            {
-                finalsal = hours * 2000 + ot * 1000 + bonus;
-            }
+                int hours = Convert.ToInt32(Txthours.Text);
+                int ot = Convert.ToInt32(TxtOt.Text);
+                double bonus = Convert.ToDouble(Txtbonus.Text);
+
+                double finalsal = 0;
+
+                if (Cmbdepartment.SelectedIndex == 0)
+                {
+                    finalsal = hours * 2000 + ot * 1000 + bonus;
+                }
+                else if (Cmbdepartment.SelectedIndex == 1)
+                {
+                    finalsal = hours * 1000 + ot * 1000 + bonus;
+                }
+                else if (Cmbdepartment.SelectedIndex == 2)
+                {
+                    finalsal = hours * 1000 + ot * 500 + bonus;
+                }
+                else
+                {
+                    finalsal = hours * 2000 + ot * 1000 + bonus;
+                }
 
 
-            Txtfinal.Text = finalsal.ToString();
+                Txtfinal.Text = finalsal.ToString();
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Please enter the vaild numeric value ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An unexpected error occurred ");
+            }
 
         }
 

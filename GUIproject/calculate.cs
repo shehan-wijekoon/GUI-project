@@ -24,6 +24,7 @@ namespace GUIproject
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Add the Error Exception for the code
             try
             {
                 int hours = Convert.ToInt32(Txthours.Text);

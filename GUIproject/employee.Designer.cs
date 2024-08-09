@@ -171,12 +171,12 @@
             button1.BackColor = SystemColors.GradientInactiveCaption;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft JhengHei UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Microsoft JhengHei UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(351, 460);
+            button1.Location = new Point(362, 466);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new Size(241, 55);
+            button1.Size = new Size(230, 78);
             button1.TabIndex = 11;
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = false;
@@ -206,6 +206,7 @@
             Name = "employee";
             Text = "employee";
             WindowState = FormWindowState.Maximized;
+            Load += employee_Load;
             ResumeLayout(false);
             PerformLayout();
         }
